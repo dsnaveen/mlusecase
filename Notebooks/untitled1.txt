@@ -1,6 +1,0 @@
-a2 = table(a1,{ hour_id, person_id, NumAccess := count(group) }, hour_id, person_id, unsorted,merge);
-a3 = table(a2, {
-hour_id, 
-NumTimeAccess := sum(group, NumAccess), 
-NumUniqueUserAccess := count(group)}, 
-hour_id, unsorted, merge);
